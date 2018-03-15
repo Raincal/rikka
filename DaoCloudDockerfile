@@ -1,9 +1,9 @@
-FROM golang:latest
+FROM golang:1.10.0 as builder
 
-MAINTAINER 7sDream "7seconddream@gmail.com"
+LABEL maintainer="Raincal <cyj94228@gmail.com>"
 
-WORKDIR $GOPATH/src/github.com/7sDream/rikka
-ADD . $GOPATH/src/github.com/7sDream/rikka
+WORKDIR $GOPATH/src/github.com/Raincal/rikka
+COPY . $GOPATH/src/github.com/Raincal/rikka
 
 RUN go get -v -d . && \
     go build -v . && \
@@ -11,8 +11,12 @@ RUN go get -v -d . && \
     cp -R server $GOPATH/bin/ && \
     rm -rf $GOPATH/src
 
-WORKDIR $GOPATH/bin
+FROM alpine:3.7
 
-EXPOSE 80
+# fix library dependencies
+# otherwise golang binary may encounter 'not found' error
+RUN mkdir /lib64 && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
 
-ENTRYPOINT ["rikka"]
+COPY --from=builder /go/bin /
+
+ENTRYPOINT ["/rikka"]

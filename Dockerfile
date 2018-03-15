@@ -1,4 +1,6 @@
-FROM golang:latest
+FROM golang:1.10.0 as builder
+
+LABEL maintainer="Raincal <cyj94228@gmail.com>"
 
 ARG VCS_REF
 ARG VCS_URL
@@ -15,10 +17,8 @@ LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.docker.dockerfile="/Dockerfile" \
     org.label-schema.name="Rikka"
 
-MAINTAINER 7sDream "7seconddream@gmail.com"
-
 WORKDIR $GOPATH/src/github.com/Raincal/rikka
-ADD . $GOPATH/src/github.com/Raincal/rikka
+COPY . $GOPATH/src/github.com/Raincal/rikka
 
 RUN go get -v -d . && \
     go build -v . && \
@@ -26,8 +26,12 @@ RUN go get -v -d . && \
     cp -R server $GOPATH/bin/ && \
     rm -rf $GOPATH/src
 
-WORKDIR $GOPATH/bin
+FROM alpine:3.7
 
-EXPOSE 80
+# fix library dependencies
+# otherwise golang binary may encounter 'not found' error
+RUN mkdir /lib64 && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
 
-ENTRYPOINT ["rikka"]
+COPY --from=builder /go/bin /
+
+ENTRYPOINT ["/rikka"]
