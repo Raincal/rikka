@@ -81,7 +81,9 @@ func uploadToCI(q *plugins.SaveRequest, taskID string) {
 
 func (plugin tcciPlugin) SaveRequestHandle(q *plugins.SaveRequest) (*api.TaskId, error) {
 	l.Debug("Receive a file save request")
-	taskID := uuid.NewV4().String() + "." + q.FileExt
+
+	u, _ := uuid.NewV4()
+	taskID := u.String() + "." + q.FileExt
 
 	err := plugins.CreateTask(taskID)
 	if err != nil {

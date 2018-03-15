@@ -5,6 +5,7 @@ import (
 
 	"github.com/Raincal/rikka/plugins"
 	"github.com/Raincal/rikka/plugins/tencent"
+	"github.com/tencentyun/image-go-sdk"
 )
 
 func (plugin tcciPlugin) Init() {
