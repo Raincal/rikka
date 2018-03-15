@@ -21,6 +21,7 @@ import (
 
 const (
 	uploadBaseURL     = "http://%s.file.myqcloud.com/files/v2/%s/%s/%s%s"
+	ciBaseURL         = "https://%s-%s.image.myqcloud.com/%s"
 	taskIDPlaceholder = "{taskID}"
 )
 
@@ -94,7 +95,7 @@ func (c *cosClient) auxMakeUploadRequest(q *plugins.SaveRequest, taskID string) 
 	l.Debug("Write file content of task", taskID, "to form file successfully")
 
 	shaOfFile := sha1.Sum(fileContent)
-	shaString := strings.ToUpper(hex.EncodeToString(shaOfFile[:]))
+	shaString := strings.ToLower(hex.EncodeToString(shaOfFile[:]))
 	l.Info("Get sha256 of task", taskID, ":", shaString)
 
 	params := map[string]string{
@@ -184,8 +185,7 @@ func (c *cosClient) Upload(q *plugins.SaveRequest, taskID string) error {
 	l.Debug("Image upload of task", taskID, "successfully")
 
 	if bucketHost == "" {
-		data := m["data"].(map[string]interface{})
-		url := data["access_url"].(string)
+		url := fmt.Sprintf(ciBaseURL, bucketName, appID, taskID)
 		bucketHost = strings.Replace(url, taskID, taskIDPlaceholder, -1)
 		l.Debug("Get image url format:", bucketHost)
 	}

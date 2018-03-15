@@ -59,7 +59,7 @@ function getPhotoState(taskID, times) {
         }
         return json["URL"];
     }).then(function (url){
-        imageElement.src = url;
+        imageElement.src = url + "?imageView2/2/h/268/q/85";
         hide(stateElement);
         show(imageElement);
         show(formElement);
