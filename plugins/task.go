@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/7sDream/rikka/api"
+	"github.com/Raincal/rikka/api"
 )
 
 var (

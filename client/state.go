@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/7sDream/rikka/api"
+	"github.com/Raincal/rikka/api"
 )
 
 func GetState(host string, taskID string) (*api.State, error) {

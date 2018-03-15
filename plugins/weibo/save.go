@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/7sDream/rikka/api"
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/api"
+	"github.com/Raincal/rikka/plugins"
 )
 
 func uploadToWeibo(taskIDInt int64, taskIDStr string, q *plugins.SaveRequest) {

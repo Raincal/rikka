@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/plugins"
 )
 
 const (

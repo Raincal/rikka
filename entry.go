@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/7sDream/rikka/common/logger"
-	"github.com/7sDream/rikka/plugins"
-	"github.com/7sDream/rikka/server"
+	"github.com/Raincal/rikka/common/logger"
+	"github.com/Raincal/rikka/plugins"
+	"github.com/Raincal/rikka/server"
 )
 
 // Logger of this package

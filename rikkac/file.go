@@ -6,8 +6,8 @@ import (
 	pathUtil "path/filepath"
 	"strings"
 
-	"github.com/7sDream/rikka/client"
-	"github.com/7sDream/rikka/common/util"
+	"github.com/Raincal/rikka/client"
+	"github.com/Raincal/rikka/common/util"
 )
 
 func readFile(filePath string) (string, []byte, error) {

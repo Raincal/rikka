@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/7sDream/rikka/api"
+	"github.com/Raincal/rikka/api"
 )
 
 func GetURL(host string, taskID string) (*api.URL, error) {

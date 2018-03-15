@@ -4,7 +4,7 @@ import (
 	"mime/multipart"
 	"net/http"
 
-	"github.com/7sDream/rikka/api"
+	"github.com/Raincal/rikka/api"
 )
 
 // SaveRequest is a request that want to 'save'(actually upload) a file.

@@ -17,8 +17,8 @@ LABEL org.label-schema.schema-version="1.0" \
 
 MAINTAINER 7sDream "7seconddream@gmail.com"
 
-WORKDIR $GOPATH/src/github.com/7sDream/rikka
-ADD . $GOPATH/src/github.com/7sDream/rikka
+WORKDIR $GOPATH/src/github.com/Raincal/rikka
+ADD . $GOPATH/src/github.com/Raincal/rikka
 
 RUN go get -v -d . && \
     go build -v . && \

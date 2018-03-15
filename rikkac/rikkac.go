@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/7sDream/rikka/common/logger"
+	"github.com/Raincal/rikka/common/logger"
 )
 
 const (

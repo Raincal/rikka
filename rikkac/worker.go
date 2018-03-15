@@ -1,6 +1,6 @@
 package main
 
-import "github.com/7sDream/rikka/client"
+import "github.com/Raincal/rikka/client"
 
 type taskRes struct {
 	Index    int

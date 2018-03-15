@@ -1,6 +1,6 @@
 package cos
 
-import "github.com/7sDream/rikka/plugins"
+import "github.com/Raincal/rikka/plugins"
 
 type tccosPlugin struct{}
 

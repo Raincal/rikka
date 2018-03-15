@@ -1,6 +1,6 @@
 package weibo
 
-import "github.com/7sDream/rikka/common/util"
+import "github.com/Raincal/rikka/common/util"
 
 func (wbp weiboPlugin) Init() {
 	l.Info("Start plugin weibo")

@@ -3,8 +3,8 @@ package weibo
 import (
 	"strconv"
 
-	"github.com/7sDream/rikka/api"
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/api"
+	"github.com/Raincal/rikka/plugins"
 )
 
 func (wbp weiboPlugin) URLRequestHandle(q *plugins.URLRequest) (pURL *api.URL, err error) {

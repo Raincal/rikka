@@ -4,8 +4,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/7sDream/rikka/api"
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/api"
+	"github.com/Raincal/rikka/plugins"
 	"github.com/satori/go.uuid"
 )
 

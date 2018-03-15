@@ -11,7 +11,7 @@ import (
 	pathUtil "path/filepath"
 	"strings"
 
-	"github.com/7sDream/rikka/common/logger"
+	"github.com/Raincal/rikka/common/logger"
 )
 
 // GetTaskIDByRequest gets last part of url path as a taskID and return it.

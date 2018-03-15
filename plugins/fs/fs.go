@@ -3,7 +3,7 @@ package fs
 import (
 	"flag"
 
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/plugins"
 )
 
 // plugin type

@@ -4,10 +4,10 @@ import (
 	"net/http"
 	pathUtil "path/filepath"
 
-	"github.com/7sDream/rikka/common/logger"
-	"github.com/7sDream/rikka/common/util"
-	"github.com/7sDream/rikka/server/apiserver"
-	"github.com/7sDream/rikka/server/webserver"
+	"github.com/Raincal/rikka/common/logger"
+	"github.com/Raincal/rikka/common/util"
+	"github.com/Raincal/rikka/server/apiserver"
+	"github.com/Raincal/rikka/server/webserver"
 )
 
 var (

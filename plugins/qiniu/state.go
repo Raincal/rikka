@@ -1,8 +1,8 @@
 package qiniu
 
 import (
-	"github.com/7sDream/rikka/api"
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/api"
+	"github.com/Raincal/rikka/plugins"
 )
 
 const (

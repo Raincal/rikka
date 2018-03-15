@@ -1,7 +1,7 @@
 package qiniu
 
 import (
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/plugins"
 	"github.com/qiniu/api.v7/auth/qbox"
 	"github.com/qiniu/api.v7/storage"
 )

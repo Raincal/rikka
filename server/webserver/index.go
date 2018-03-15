@@ -3,7 +3,7 @@ package webserver
 import (
 	"net/http"
 
-	"github.com/7sDream/rikka/common/util"
+	"github.com/Raincal/rikka/common/util"
 )
 
 // IndexHandler handle request ask for homepage(${RootPath}, "/" in general), use templates/index.html

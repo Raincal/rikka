@@ -1,8 +1,8 @@
 package cos
 
 import (
-	"github.com/7sDream/rikka/plugins"
-	"github.com/7sDream/rikka/plugins/tencent"
+	"github.com/Raincal/rikka/plugins"
+	"github.com/Raincal/rikka/plugins/tencent"
 )
 
 func (plugin tccosPlugin) Init() {

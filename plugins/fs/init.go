@@ -4,7 +4,7 @@ import (
 	"os"
 	pathUtil "path/filepath"
 
-	"github.com/7sDream/rikka/common/util"
+	"github.com/Raincal/rikka/common/util"
 )
 
 // Init is the plugin init function, will be called when plugin be load.

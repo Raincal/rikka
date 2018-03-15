@@ -4,8 +4,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/7sDream/rikka/common/util"
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/common/util"
+	"github.com/Raincal/rikka/plugins"
 )
 
 const (

@@ -7,14 +7,14 @@ import (
 	"os/signal"
 	"strconv"
 
-	"github.com/7sDream/rikka/common/logger"
-	"github.com/7sDream/rikka/plugins"
-	"github.com/7sDream/rikka/plugins/fs"
-	"github.com/7sDream/rikka/plugins/qiniu"
-	"github.com/7sDream/rikka/plugins/tencent/ci"
-	"github.com/7sDream/rikka/plugins/tencent/cos"
-	"github.com/7sDream/rikka/plugins/upai"
-	"github.com/7sDream/rikka/plugins/weibo"
+	"github.com/Raincal/rikka/common/logger"
+	"github.com/Raincal/rikka/plugins"
+	"github.com/Raincal/rikka/plugins/fs"
+	"github.com/Raincal/rikka/plugins/qiniu"
+	"github.com/Raincal/rikka/plugins/tencent/ci"
+	"github.com/Raincal/rikka/plugins/tencent/cos"
+	"github.com/Raincal/rikka/plugins/upai"
+	"github.com/Raincal/rikka/plugins/weibo"
 )
 
 var (

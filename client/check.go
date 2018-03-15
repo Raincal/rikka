@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/7sDream/rikka/server/apiserver"
+	"github.com/Raincal/rikka/server/apiserver"
 )
 
 func CheckFile(absFilePath string) ([]byte, error) {

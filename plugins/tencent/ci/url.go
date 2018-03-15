@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/7sDream/rikka/api"
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/api"
+	"github.com/Raincal/rikka/plugins"
 )
 
 func (plugin tcciPlugin) URLRequestHandle(q *plugins.URLRequest) (*api.URL, error) {

@@ -1,6 +1,6 @@
 package webserver
 
-import "github.com/7sDream/rikka/api"
+import "github.com/Raincal/rikka/api"
 
 var (
 	context = struct {

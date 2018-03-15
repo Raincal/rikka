@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/7sDream/rikka/api"
+	"github.com/Raincal/rikka/api"
 )
 
 func createUploadRequest(url string, path string, content []byte, params map[string]string) (*http.Request, error) {

@@ -3,7 +3,7 @@ package apiserver
 import (
 	"net/http"
 
-	"github.com/7sDream/rikka/common/util"
+	"github.com/Raincal/rikka/common/util"
 )
 
 // stateHandleFunc is the base handle func of path /api/state/taskID

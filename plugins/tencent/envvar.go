@@ -1,8 +1,8 @@
 package tencent
 
 import (
-	"github.com/7sDream/rikka/common/logger"
-	"github.com/7sDream/rikka/common/util"
+	"github.com/Raincal/rikka/common/logger"
+	"github.com/Raincal/rikka/common/util"
 )
 
 const (

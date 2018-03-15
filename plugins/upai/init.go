@@ -1,8 +1,8 @@
 package upai
 
 import (
-	"github.com/7sDream/rikka/common/util"
-	"github.com/7sDream/rikka/plugins"
+	"github.com/Raincal/rikka/common/util"
+	"github.com/Raincal/rikka/plugins"
 	"github.com/upyun/go-sdk/upyun"
 )
 

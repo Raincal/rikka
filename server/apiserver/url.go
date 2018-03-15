@@ -3,7 +3,7 @@ package apiserver
 import (
 	"net/http"
 
-	"github.com/7sDream/rikka/common/util"
+	"github.com/Raincal/rikka/common/util"
 )
 
 func urlHandleFunc(w http.ResponseWriter, r *http.Request) {

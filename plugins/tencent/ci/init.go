@@ -3,9 +3,8 @@ package ci
 import (
 	"strconv"
 
-	"github.com/7sDream/rikka/plugins"
-	"github.com/7sDream/rikka/plugins/tencent"
-	"github.com/tencentyun/image-go-sdk"
+	"github.com/Raincal/rikka/plugins"
+	"github.com/Raincal/rikka/plugins/tencent"
 )
 
 func (plugin tcciPlugin) Init() {

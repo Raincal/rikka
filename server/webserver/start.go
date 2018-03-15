@@ -3,7 +3,7 @@ package webserver
 import (
 	"net/http"
 
-	"github.com/7sDream/rikka/common/logger"
+	"github.com/Raincal/rikka/common/logger"
 )
 
 var (
