@@ -20,7 +20,7 @@ import (
 )
 
 const (
-	uploadBaseURL     = "http://web.file.myqcloud.com/files/v1/%s/%s/%s%s"
+	uploadBaseURL     = "http://%s.file.myqcloud.com/files/v2/%s/%s/%s%s"
 	taskIDPlaceholder = "{taskID}"
 )
 
@@ -117,7 +117,7 @@ func (c *cosClient) auxMakeUploadRequest(q *plugins.SaveRequest, taskID string) 
 	}
 	l.Debug("Close form writer of task", taskID, "successfully")
 
-	url := fmt.Sprintf(uploadBaseURL, appID, bucketName, bucketPath, taskID)
+	url := fmt.Sprintf(uploadBaseURL, region, appID, bucketName, bucketPath, taskID)
 
 	req, err := http.NewRequest("POST", url, body)
 	if err != nil {

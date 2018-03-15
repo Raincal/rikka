@@ -13,6 +13,7 @@ var (
 	bucketName string
 	bucketPath string
 	bucketHost string
+	region     string
 
 	client *cosClient
 

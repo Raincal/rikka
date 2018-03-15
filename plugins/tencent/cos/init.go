@@ -13,6 +13,7 @@ func (plugin tccosPlugin) Init() {
 	appID = tencent.GetAppIDWithCheck(l)
 	secretID = tencent.GetSecretIDWithCheck(l)
 	secretKey = tencent.GetSecretKeyWithCheck(l)
+	region = tencent.GetRegionWithCheck(l)
 	bucketName = plugins.GetBucketName()
 	bucketPath = plugins.GetBucketPath()
 
